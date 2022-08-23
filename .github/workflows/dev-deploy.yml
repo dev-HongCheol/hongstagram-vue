@@ -1,0 +1,29 @@
+name: deploy dev-server
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  depoly:
+    name: dev deploy
+    runs-on: [self-hosted]
+
+    steps:
+
+    - name: Check out current commit (${{github.sha}})
+      uses: actions/checkout@v2
+
+    - name: Use Node.js 16.x
+      uses: actions/setup-node@v1
+      whit:
+        node-version: 16.x
+    - name: package dependecies install
+      uses: yarn
+    
+    - name: build
+      uses: yarn build
+      env: 
+        NODE_ENV: production
+    
+    - name: make docker images
