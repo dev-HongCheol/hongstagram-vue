@@ -27,4 +27,4 @@ jobs:
         NODE_ENV: production
     
     - name: make docker images
-      uses: docker-compose up -d
+      run: docker-compose up -d
