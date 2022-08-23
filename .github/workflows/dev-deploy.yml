@@ -27,3 +27,7 @@ jobs:
         NODE_ENV: production
     
     - name: make docker images
+      uses: docker-compose up -d
+    
+    - name: check docker process
+      uses: docker ps -a | grep "hongstagarm"
