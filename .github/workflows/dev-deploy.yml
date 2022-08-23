@@ -18,11 +18,12 @@ jobs:
       uses: actions/setup-node@v1
       whit:
         node-version: 16.x
+        
     - name: package dependecies install
-      uses: yarn
+      run: yarn
     
     - name: build
-      uses: yarn build
+      run: yarn build
       env: 
         NODE_ENV: production
     
