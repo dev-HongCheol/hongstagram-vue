@@ -10,7 +10,6 @@ jobs:
     runs-on: [self-hosted]
 
     steps:
-
     - name: Check out current commit (${{github.sha}})
       uses: actions/checkout@v2
 
