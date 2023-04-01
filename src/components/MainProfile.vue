@@ -49,7 +49,7 @@
             <b>이지금 IU</b>
           </div>
           <div>
-            strawberrymoon❤️❤️🍓❤️❤️
+            strawberrymoon1❤️❤️🍓❤️❤️
           </div>
           <div>
             <a href="youtu.be/sqgxcCjD04s">youtu.be/sqgxcCjD04s</a>
